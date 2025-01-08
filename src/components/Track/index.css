@@ -1,0 +1,48 @@
+.image {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.track-name {
+  color: #fff;
+}
+
+.genre {
+  color: #3b82f6;
+}
+
+.duration {
+  color: #fff;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.delete-icon {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.image-name-genre-section {
+  display: flex;
+}
+
+.duration-delete-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
