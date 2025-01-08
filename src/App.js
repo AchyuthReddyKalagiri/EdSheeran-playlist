@@ -102,6 +102,12 @@ class App extends Component {
     this.setState({trackList: filteredTracks})
   }
 
+  renderNoSongsFound = () => (
+    <div className="not-found-container">
+      <h1 className="not-found">No Songs Found</h1>
+    </div>
+  )
+
   render() {
     const {searchInput, trackList} = this.state
     console.log(trackList)
@@ -130,9 +136,15 @@ class App extends Component {
             </div>
           </div>
           <ul>
-            {finalList.map(each => (
-              <Track list={each} key={each.id} deleteTrack={this.deleteTrack} />
-            ))}
+            {finalList.length === 0
+              ? this.renderNoSongsFound()
+              : finalList.map(each => (
+                  <Track
+                    list={each}
+                    key={each.id}
+                    deleteTrack={this.deleteTrack}
+                  />
+                ))}
           </ul>
         </div>
       </div>

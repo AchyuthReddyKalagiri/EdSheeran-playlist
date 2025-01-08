@@ -7,6 +7,7 @@ const Track = props => {
   const onDeleteTrack = () => {
     deleteTrack(id)
   }
+
   return (
     <li className="track">
       <div className="image-name-genre-section">

@@ -24,6 +24,8 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 30px;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .bottom-container {
@@ -65,4 +67,16 @@ body {
 
 .profession {
   color: #ffff;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 20px;
+    font-family: 'roboto';
+  }
+}
+
+.not-found {
+  color: #fff;
+  text-align: center;
 }
